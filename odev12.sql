@@ -1,7 +1,7 @@
 --1-film tablosunda film uzunluğu length sütununda gösterilmektedir. Uzunluğu ortalama film uzunluğundan fazla kaç tane film vardır?
 
 select count(*) from film
-where length > (select AVG(length) from film);
+where length > (select avg(length) from film);
 
 
 --2-film tablosunda en yüksek rental_rate değerine sahip kaç tane film vardır?
